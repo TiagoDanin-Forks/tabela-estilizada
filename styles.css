@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 2rem;
@@ -72,6 +72,19 @@ body {
     overflow: hidden;
 }
 
+.table-caption {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    padding: 1rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #667eea;
+    letter-spacing: 0.5px;
+}
+
 .styled-table thead tr {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -121,44 +134,44 @@ body {
 }
 
 .pagination-controls {
-  display: flex;
-  justify-content: flex-end;
-  /* Alinha os controles à direita da tabela */
-  align-items: center;
-  gap: 15px;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha os controles à direita da tabela */
+    align-items: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
 }
 
 .pagination-controls button {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pagination-controls button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pagination-controls button:disabled {
-  background: #e2e8f0;
-  color: #a0aec0;
-  cursor: not-allowed;
-  box-shadow: none;
+    background: #e2e8f0;
+    color: #a0aec0;
+    cursor: not-allowed;
+    box-shadow: none;
 }
 
 #pageInfo {
-  font-weight: 500;
-  color: #4a5568;
+    font-weight: 500;
+    color: #4a5568;
 }
 
 @media screen and (max-width: 768px) {

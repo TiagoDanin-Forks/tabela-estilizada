@@ -10,10 +10,24 @@
     <main>
         <h1>Tabela Estilizada</h1>
 
-        <!-- Coloque a Tabela Estilizada aqui -->
-        <div id="gallery-container">
-            <!-- TODO: Implementar Tabela Estilizada -->
-        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td id="totalQty">0</td>
+                    <td id="totalPrice">R$ 0,00</td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
 
     <script src="script.js"></script>

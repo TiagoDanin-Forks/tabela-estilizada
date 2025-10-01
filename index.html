@@ -18,24 +18,30 @@
             </div>
 
             <div class="table-wrapper">
-                <table class="styled-table" id="dataTable">
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Quantidade</th>
-                            <th>Preço</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody">
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td id="totalQty">0</td>
-                            <td id="totalPrice">R$ 0,00</td>
-                        </tr>
-                    </tfoot>
-                </table>
+              <table class="styled-table" id="dataTable">
+                <thead>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Total</td>
+                    <td id="totalQty">0</td>
+                    <td id="totalPrice">R$ 0,00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+            <div class="pagination-controls">
+              <button id="prevBtn" disabled>Anterior</button>
+              <span id="pageInfo">Página 1 de X</span>
+              <button id="nextBtn">Próxima</button>
             </div>
         </div>
     </main>

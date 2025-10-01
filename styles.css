@@ -95,16 +95,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.styled-table tbody tr td:first-child {
-    border-radius: 8px 0 0 8px;
-}
-
-.styled-table tbody tr td:last-child {
-    border-radius: 0 8px 8px 0;
-}
-
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #d1fae5;
+    background-color: #e4dfff;
+    border-radius: 0;
 }
 
 .styled-table tbody tr:last-of-type {
@@ -125,6 +118,47 @@ body {
 
 .styled-table tfoot td {
     font-size: 1.1rem;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  /* Alinha os controles à direita da tabela */
+  align-items: center;
+  gap: 15px;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pagination-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-controls button:disabled {
+  background: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+#pageInfo {
+  font-weight: 500;
+  color: #4a5568;
 }
 
 @media screen and (max-width: 768px) {

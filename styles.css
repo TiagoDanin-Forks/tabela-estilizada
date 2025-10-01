@@ -1,3 +1,185 @@
 /* Estilos para Tabela Estilizada */
 
-/* TODO: Adicionar estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilos do Título da Tabela */
+.table-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid #667eea;
+}
+
+.table-title {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.table-subtitle {
+    color: #718096;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Estilos da Tabela */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.styled-table thead tr {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: left;
+    font-weight: 600;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 1rem 1.5rem;
+}
+
+.styled-table th {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f7fafc;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #667eea;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #edf2f7;
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.styled-table tfoot tr {
+    background-color: #2d3748;
+    color: white;
+    font-weight: 700;
+}
+
+.styled-table tfoot td {
+    font-size: 1.1rem;
+}
+
+/* Status badges */
+.status {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status.success {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.status.warning {
+    background-color: #feebc8;
+    color: #7c2d12;
+}
+
+.status.danger {
+    background-color: #fed7d7;
+    color: #742a2a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .table-title {
+        font-size: 1.8rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .title-icon {
+        font-size: 2rem;
+    }
+
+    .table-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .styled-table th {
+        font-size: 0.8rem;
+    }
+}

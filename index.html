@@ -8,26 +8,36 @@
 </head>
 <body>
     <main>
-        <h1>Tabela Estilizada</h1>
+        <div class="container">
+            <div class="table-header">
+                <h1 class="table-title">
+                    <span class="title-icon">📊</span>
+                    Relatório de Vendas 2025
+                </h1>
+                <p class="table-subtitle">Desempenho trimestral por região</p>
+            </div>
 
-        <table id="dataTable">
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Total</td>
-                    <td id="totalQty">0</td>
-                    <td id="totalPrice">R$ 0,00</td>
-                </tr>
-            </tfoot>
-        </table>
+            <div class="table-wrapper">
+                <table class="styled-table" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalQty">0</td>
+                            <td id="totalPrice">R$ 0,00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>

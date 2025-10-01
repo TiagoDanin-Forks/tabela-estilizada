@@ -1,55 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tabela Estilizada</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <main>
-            <div class="container">
-                <div class="table-header">
-                    <h1 class="table-title">
-                        <span class="title-icon">📊</span>
-                        Relatório de Vendas 2025
-                    </h1>
-                    <p class="table-subtitle">
-                        Desempenho trimestral por região
-                    </p>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Estilizada</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="table-header">
+          <h1 class="table-title">
+            <span class="title-icon">📊</span>
+            Relatório de Vendas 2025
+          </h1>
+          <p class="table-subtitle">Desempenho trimestral por região</p>
+        </div>
 
-                <div class="table-wrapper">
-                    <table class="styled-table" id="dataTable">
-                        <caption class="table-caption">
-                            Detalhamento de Produtos Vendidos
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Produto</th>
-                                <th scope="col">Quantidade</th>
-                                <th scope="col">Preço Unitário</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tableBody"></tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Total</td>
-                                <td id="totalQty">0</td>
-                                <td id="totalPrice">R$ 0,00</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+        <div class="table-wrapper">
+          <table class="styled-table" id="dataTable">
+            <caption class="table-caption">
+              Detalhamento de Produtos Vendidos
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" colspan="2">Produto</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço Unitário</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td id="totalQty">0</td>
+                <td id="totalPrice">R$ 0,00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
 
-                <div class="pagination-controls">
-                    <button id="prevBtn" disabled>Anterior</button>
-                    <span id="pageInfo">Página 1 de X</span>
-                    <button id="nextBtn">Próxima</button>
-                </div>
-            </div>
-        </main>
+        <div class="pagination-controls">
+          <button id="prevBtn" disabled>Anterior</button>
+          <span id="pageInfo">Página 1 de X</span>
+          <button id="nextBtn">Próxima</button>
+        </div>
+      </div>
+    </main>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
